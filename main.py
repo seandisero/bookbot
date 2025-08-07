@@ -1,4 +1,4 @@
-from stats import get_number_of_words, count_number_of_letters, sort_counted_letter
+import stats as stt
 import sys
 
 
@@ -17,7 +17,7 @@ def main():
     book = sys.argv[1]
     frankenstein_string = get_book_text(book)
     print('Found {} total words'.format(len(frankenstein_string.split())))
-    sorted_letter_count = sort_counted_letter(count_number_of_letters(frankenstein_string))
+    sorted_letter_count = stt.sort_counted_letters(stt.count_number_of_letters(frankenstein_string))
     for i in sorted_letter_count:
         print('{}: {}'.format(i['char'], i['num']))
 

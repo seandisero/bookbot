@@ -13,7 +13,7 @@ def count_number_of_letters(book_text):
     return return_dict
 
 
-def sort_counted_letter(letter_dict):
+def sort_counted_letters(letter_dict):
     return_list = []
     for i in letter_dict:
         entry = {}
